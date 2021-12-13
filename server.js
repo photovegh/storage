@@ -8,4 +8,9 @@ const db = mongoose.connection;
 db.on("error", (error) => console.error(error));
 db.once("open", () => console.log("Connected to database..."));
 
+app.use(express.json());
+
+const subscribersRouter = require("./routes/subscribers.js");
+app.use("/subscribers", subscribersRouter);
+
 app.listen(9876, () => console.log("server is OK 😋"));

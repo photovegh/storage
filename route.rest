@@ -1,0 +1,29 @@
+GET http://test:9876/subscribers
+
+###
+
+GET http://test:9876/subscribers/61b78c95959821af84641489
+
+###
+
+POST http://test:9876/subscribers
+Content-Type: application/json
+
+{
+    "name": "Tibor Vegh",
+    "subscribedToChannel": "Good OLD Developer"
+}
+
+###
+
+DELETE http://test:9876/subscribers/61b79b990eb939b2e7e182f1
+
+###
+
+PATCH http://test:9876/subscribers/61b79f2291f0c04e2bf50c33
+Content-Type: application/json
+
+{
+    "name": "VERY Amazing Photovegh"
+    
+}

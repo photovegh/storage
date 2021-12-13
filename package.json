@@ -2,7 +2,7 @@
   "name": "storage",
   "version": "1.0.0",
   "description": "cookie & REST API",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "devStart": "nodemon server.js"
   },
